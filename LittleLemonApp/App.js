@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import WelcomeScreen from "./components/WelcomeScreen";
+import { StyleSheet, View } from "react-native";
 import Header from "./components/Header";
+import WelcomeScreen from "./components/WelcomeScreen";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -9,14 +9,16 @@ export default function App() {
     <View style={styles.container}>
       <Header />
       <WelcomeScreen />
+      <Footer />
+      <StatusBar style="auto" />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#fff",
     flex: 1,
-    justifyContent: "center",
+    backgroundColor: "#333333",
+    justifyContent: "space-between",
   },
 });

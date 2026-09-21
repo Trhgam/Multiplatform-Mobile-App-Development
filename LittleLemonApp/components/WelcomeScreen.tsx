@@ -21,12 +21,12 @@ const styles = StyleSheet.create({
   },
   headerText: {
     padding: 40,
-    fontSize: 50,
+    fontSize: 30,
     color: "#EDEFEE",
     textAlign: "center",
   },
   subheadingText: {
-    fontSize: 38,
+    fontSize: 24,
     padding: 20,
     marginVertical: 8,
     color: "#EDEFEE",

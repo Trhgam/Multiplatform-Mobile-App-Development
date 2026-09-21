@@ -1,11 +1,11 @@
-import { View, Text, StyleSheet } from "react-native";
+import { SafeAreaView, Text, StyleSheet } from "react-native";
 import React from "react";
 
 export default function Header() {
   return (
-    <View style={styles.backgroundColor}>
+    <SafeAreaView  style={styles.backgroundColor}>
       <Text style={styles.headerText}>Little Lemon</Text>
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     fontSize: 36,
     color: "#000000",
     backgroundColor: "#F3D032",
-    paddingTop: 50,
+    // paddingTop: 50, dùng SafeAreaView rồi nên ko cần paddingTop thêm vì nó đã làm sẵn cho rồi, nếu dùng View thì cần nhưng nó quá hardcode.
     paddingBottom: 5,
     textAlign: "center",
     fontWeight: "500",
